@@ -14,6 +14,7 @@ class CardTemplate: BaseTemplate {
     var title: String
     var subtitle: String
 
+
     required init(json: JSON) {
         self.title = json["title"].stringValue
         self.subtitle = json["subtitle"].stringValue

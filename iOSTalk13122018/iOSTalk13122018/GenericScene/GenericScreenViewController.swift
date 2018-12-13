@@ -32,6 +32,7 @@ class GenericScreenViewController: UIViewController, GenericScreenView {
     func add(views:[TemplateView]) {
         for view in views {
             stackView.addArrangedSubview(view as! UIView)
+            view.visit(self.presenter.actionHandlerBuilder)
         }
     }
 

@@ -9,7 +9,12 @@
 import Foundation
 
 
-protocol GenericScreenPresentation {
+protocol GenericScreenPresentation:class {
+    
+    var view: GenericScreenView! { get set }
+    var navigator: Navigation { get set }
+    var actionHandlerBuilder: ActionHandlerBuilder! { get set }
+
     func inflate()
 }
 
@@ -17,9 +22,13 @@ class GenericScreenPresenter : GenericScreenPresentation {
 
     weak var view: GenericScreenView!
     var model: RootTemplate?
-    
-    init(view: GenericScreenView) {
+    var navigator: Navigation
+    var actionHandlerBuilder: ActionHandlerBuilder!
+
+    init(view: GenericScreenView, nav: Navigation) {
         self.view = view
+        self.navigator = nav
+        
     }
     
     func inflate() {

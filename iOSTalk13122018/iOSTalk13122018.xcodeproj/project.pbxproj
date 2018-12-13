@@ -21,7 +21,7 @@
 		0105FF1221C26FC60080EEE4 /* TemplateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF0F21C26FC60080EEE4 /* TemplateFactory.swift */; };
 		0105FF1321C26FC60080EEE4 /* BaseTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1021C26FC60080EEE4 /* BaseTemplate.swift */; };
 		0105FF1521C26FD30080EEE4 /* BaseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1421C26FD20080EEE4 /* BaseAction.swift */; };
-		0105FF1721C270930080EEE4 /* NavegationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1621C270930080EEE4 /* NavegationAction.swift */; };
+		0105FF1721C270930080EEE4 /* NavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1621C270930080EEE4 /* NavigationAction.swift */; };
 		0105FF1921C2716C0080EEE4 /* ActionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1821C2716C0080EEE4 /* ActionFactory.swift */; };
 		0105FF1F21C298240080EEE4 /* BaseTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1E21C298240080EEE4 /* BaseTemplateView.swift */; };
 		0105FF2121C299160080EEE4 /* CardTemplateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0105FF2021C299160080EEE4 /* CardTemplateView.xib */; };
@@ -30,6 +30,10 @@
 		0105FF2821C2ACF40080EEE4 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF2721C2ACF40080EEE4 /* Navigator.swift */; };
 		0105FF2A21C2AD160080EEE4 /* GenericSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF2921C2AD160080EEE4 /* GenericSceneBuilder.swift */; };
 		0105FF2C21C2CF770080EEE4 /* views.json in Resources */ = {isa = PBXBuildFile; fileRef = 0105FF2B21C2CF770080EEE4 /* views.json */; };
+		0105FF2F21C2D0C70080EEE4 /* BaseActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF2E21C2D0C70080EEE4 /* BaseActionHandler.swift */; };
+		0105FF3121C2D2260080EEE4 /* NavigationActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF3021C2D2260080EEE4 /* NavigationActionHandler.swift */; };
+		0105FF3321C2D6390080EEE4 /* ActionHandlerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF3221C2D6390080EEE4 /* ActionHandlerFactory.swift */; };
+		0105FF3521C2D7660080EEE4 /* ActionHandlerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF3421C2D7660080EEE4 /* ActionHandlerBuilder.swift */; };
 		80C68249FFD36CB3661BEFD3 /* Pods_iOSTalk13122018Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63DAB51116C6A9CE8A1DCD4 /* Pods_iOSTalk13122018Tests.framework */; };
 		D9F4AAE4423FC49AFDA64C82 /* Pods_iOSTalk13122018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A9CA36D972DA7DFDEF16F9 /* Pods_iOSTalk13122018.framework */; };
 /* End PBXBuildFile section */
@@ -63,7 +67,7 @@
 		0105FF0F21C26FC60080EEE4 /* TemplateFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateFactory.swift; sourceTree = "<group>"; };
 		0105FF1021C26FC60080EEE4 /* BaseTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTemplate.swift; sourceTree = "<group>"; };
 		0105FF1421C26FD20080EEE4 /* BaseAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAction.swift; sourceTree = "<group>"; };
-		0105FF1621C270930080EEE4 /* NavegationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavegationAction.swift; sourceTree = "<group>"; };
+		0105FF1621C270930080EEE4 /* NavigationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAction.swift; sourceTree = "<group>"; };
 		0105FF1821C2716C0080EEE4 /* ActionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFactory.swift; sourceTree = "<group>"; };
 		0105FF1E21C298240080EEE4 /* BaseTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTemplateView.swift; sourceTree = "<group>"; };
 		0105FF2021C299160080EEE4 /* CardTemplateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTemplateView.xib; sourceTree = "<group>"; };
@@ -72,6 +76,10 @@
 		0105FF2721C2ACF40080EEE4 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		0105FF2921C2AD160080EEE4 /* GenericSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSceneBuilder.swift; sourceTree = "<group>"; };
 		0105FF2B21C2CF770080EEE4 /* views.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = views.json; sourceTree = "<group>"; };
+		0105FF2E21C2D0C70080EEE4 /* BaseActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseActionHandler.swift; sourceTree = "<group>"; };
+		0105FF3021C2D2260080EEE4 /* NavigationActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationActionHandler.swift; sourceTree = "<group>"; };
+		0105FF3221C2D6390080EEE4 /* ActionHandlerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionHandlerFactory.swift; sourceTree = "<group>"; };
+		0105FF3421C2D7660080EEE4 /* ActionHandlerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionHandlerBuilder.swift; sourceTree = "<group>"; };
 		0B6586E58E1A24CBC08F833B /* Pods-iOSTalk13122018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTalk13122018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTalk13122018/Pods-iOSTalk13122018.debug.xcconfig"; sourceTree = "<group>"; };
 		572FAE759757B82B3ECE89C6 /* Pods-iOSTalk13122018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTalk13122018.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTalk13122018/Pods-iOSTalk13122018.release.xcconfig"; sourceTree = "<group>"; };
 		AA955C13EC319A5BF548BFC7 /* Pods-iOSTalk13122018Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTalk13122018Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTalk13122018Tests/Pods-iOSTalk13122018Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +131,7 @@
 		0105FECA21BF59DB0080EEE4 /* iOSTalk13122018 */ = {
 			isa = PBXGroup;
 			children = (
+				0105FF2D21C2D0BD0080EEE4 /* ActionHandlers */,
 				0105FF2621C2ACF40080EEE4 /* Utils */,
 				0105FF1D21C298030080EEE4 /* TemplateViews */,
 				0105FF0321C252160080EEE4 /* Protocols */,
@@ -178,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				0105FF1421C26FD20080EEE4 /* BaseAction.swift */,
-				0105FF1621C270930080EEE4 /* NavegationAction.swift */,
+				0105FF1621C270930080EEE4 /* NavigationAction.swift */,
 				0105FF1821C2716C0080EEE4 /* ActionFactory.swift */,
 			);
 			path = Action;
@@ -212,8 +221,19 @@
 				0105FF2B21C2CF770080EEE4 /* views.json */,
 				0105FF2721C2ACF40080EEE4 /* Navigator.swift */,
 				0105FF2921C2AD160080EEE4 /* GenericSceneBuilder.swift */,
+				0105FF3421C2D7660080EEE4 /* ActionHandlerBuilder.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		0105FF2D21C2D0BD0080EEE4 /* ActionHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				0105FF2E21C2D0C70080EEE4 /* BaseActionHandler.swift */,
+				0105FF3021C2D2260080EEE4 /* NavigationActionHandler.swift */,
+				0105FF3221C2D6390080EEE4 /* ActionHandlerFactory.swift */,
+			);
+			path = ActionHandlers;
 			sourceTree = "<group>";
 		};
 		5D5B2BD927ED98F6817BE81E /* Frameworks */ = {
@@ -400,12 +420,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0105FF2F21C2D0C70080EEE4 /* BaseActionHandler.swift in Sources */,
 				0105FF2321C299240080EEE4 /* CardTemplateView.swift in Sources */,
 				0105FEFC21C24B2C0080EEE4 /* GenericScreenPresenter.swift in Sources */,
-				0105FF1721C270930080EEE4 /* NavegationAction.swift in Sources */,
+				0105FF1721C270930080EEE4 /* NavigationAction.swift in Sources */,
 				0105FECE21BF59DB0080EEE4 /* ViewController.swift in Sources */,
 				0105FEF921C24AF40080EEE4 /* GenericScreenViewController.swift in Sources */,
 				0105FF1921C2716C0080EEE4 /* ActionFactory.swift in Sources */,
+				0105FF3321C2D6390080EEE4 /* ActionHandlerFactory.swift in Sources */,
 				0105FF2A21C2AD160080EEE4 /* GenericSceneBuilder.swift in Sources */,
 				0105FF1F21C298240080EEE4 /* BaseTemplateView.swift in Sources */,
 				0105FF1121C26FC60080EEE4 /* CardTemplate.swift in Sources */,
@@ -414,7 +436,9 @@
 				0105FF2521C2A1440080EEE4 /* TemplateViewFactory.swift in Sources */,
 				0105FF2821C2ACF40080EEE4 /* Navigator.swift in Sources */,
 				0105FF0521C252410080EEE4 /* JSONBuildeable.swift in Sources */,
+				0105FF3521C2D7660080EEE4 /* ActionHandlerBuilder.swift in Sources */,
 				0105FECC21BF59DB0080EEE4 /* AppDelegate.swift in Sources */,
+				0105FF3121C2D2260080EEE4 /* NavigationActionHandler.swift in Sources */,
 				0105FF1221C26FC60080EEE4 /* TemplateFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

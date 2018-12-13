@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardTemplateView" customModule="iOSTalk13122018" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="263"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhM-uY-gQj">
@@ -29,24 +29,39 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBd-ZP-KG1">
+                    <rect key="frame" x="15" y="193" width="345" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ss5-tl-KAk"/>
+                    </constraints>
+                    <state key="normal" title="Action"/>
+                    <connections>
+                        <action selector="runAction" destination="iN0-l3-epB" eventType="touchUpInside" id="3bO-L4-0sa"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="b7t-2i-8CI" firstAttribute="top" secondItem="QhM-uY-gQj" secondAttribute="bottom" constant="10" id="0HY-1U-a0f"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OBd-ZP-KG1" secondAttribute="trailing" constant="15" id="2r0-FG-VA1"/>
                 <constraint firstItem="QhM-uY-gQj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3iM-lf-jOE"/>
                 <constraint firstItem="QhM-uY-gQj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CdZ-SP-GC8"/>
+                <constraint firstItem="OBd-ZP-KG1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="QeR-EZ-Gi6"/>
+                <constraint firstItem="OBd-ZP-KG1" firstAttribute="top" secondItem="b7t-2i-8CI" secondAttribute="bottom" constant="20" id="R0T-FB-m0E"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="OBd-ZP-KG1" secondAttribute="bottom" constant="20" id="V7b-j3-NTQ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b7t-2i-8CI" secondAttribute="trailing" constant="15" id="pDw-Ti-XMJ"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QhM-uY-gQj" secondAttribute="trailing" id="tP3-j6-RAb"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="b7t-2i-8CI" secondAttribute="bottom" constant="20.5" id="xXl-hN-5Re"/>
                 <constraint firstItem="b7t-2i-8CI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="zWj-2V-U1x"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="actionButton" destination="OBd-ZP-KG1" id="Tq0-Og-2C4"/>
                 <outlet property="subtitleLabel" destination="b7t-2i-8CI" id="vpF-ta-tGx"/>
                 <outlet property="titleLabel" destination="QhM-uY-gQj" id="QEn-l4-y0f"/>
             </connections>
-            <point key="canvasLocation" x="33.5" y="-176"/>
+            <point key="canvasLocation" x="33.5" y="-141.5"/>
         </view>
     </objects>
 </document>

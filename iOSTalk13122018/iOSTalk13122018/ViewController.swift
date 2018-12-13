@@ -20,8 +20,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func pushGeneric() {
-        let view = GenericSceneBuilder.build()
-
+        let view = GenericSceneBuilder.build(fileName: "views")
         self.navigationController?.pushViewController(view, animated: true);
     }
     

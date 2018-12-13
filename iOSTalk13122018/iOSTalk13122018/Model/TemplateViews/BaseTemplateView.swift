@@ -9,10 +9,14 @@
 import Foundation
 import UIKit
 
-protocol TemplateView where Self: UIView {
+protocol TemplateView:class {
     
     var data: Template? { get set }
+    var handler: ActionHandler? { get set }
+    
     func updateUI()
+    func visit(_ builder: ActionHandlerBuilder)
+
     static func view(withData:Template) -> TemplateView
     
 }
@@ -20,13 +24,21 @@ protocol TemplateView where Self: UIView {
 class BaseTemplateView: UIView, TemplateView {
 
     var data: Template?
+    var handler: ActionHandler?
+
     func updateUI() {}
     
     static func view(withData:Template) -> TemplateView {
         
         let name = NSStringFromClass(self).components(separatedBy: ".").last!
-        let view = Bundle(for: self).loadNibNamed(name, owner: self, options: nil)?.last as! BaseTemplateView
+        let view = Bundle(for: self).loadNibNamed(name, owner: self, options: nil)?.last as! TemplateView
         view.data = withData
         view.updateUI()
         return view
-    }}
+    }
+
+    func visit(_ builder: ActionHandlerBuilder) {
+        builder.injectAction(inView: self)
+    }
+
+}

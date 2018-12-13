@@ -14,9 +14,9 @@ final class ActionFactory {
     
     static func actionFor(json: JSON) -> Action? {
         
-        let dic: [String: Action.Type] = ["card": NavegationAction.self]
+        let dic: [String: Action.Type] = ["navigation": NavigationAction.self]
         
-        let typeId = json["id"].stringValue
+        let typeId = json["type"].stringValue
         
         if let type = dic[typeId]{
             return type.init(json: json)

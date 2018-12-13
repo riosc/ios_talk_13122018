@@ -16,17 +16,17 @@ protocol RootTemplate {
 
 protocol Template: JSONBuildeable {
     var id: String { get set }
-    var actions: [Action] { get set }
+    var action: Action? { get set }
 }
 
 class BaseTemplate: Template {
     var id: String
-    var actions: [Action]
+    var action: Action?
 
     
     required init(json: JSON) {
         self.id = json["id"].stringValue
-        self.actions = json["actions"].arrayValue.compactMap { ActionFactory.actionFor(json: $0) }
+        self.action = ActionFactory.actionFor(json: json["action"])
     }
 }
 
