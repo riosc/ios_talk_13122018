@@ -13,6 +13,24 @@
 		0105FED321BF59DB0080EEE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0105FED221BF59DB0080EEE4 /* Assets.xcassets */; };
 		0105FED621BF59DB0080EEE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0105FED421BF59DB0080EEE4 /* LaunchScreen.storyboard */; };
 		0105FEE121BF59DC0080EEE4 /* iOSTalk13122018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FEE021BF59DC0080EEE4 /* iOSTalk13122018Tests.swift */; };
+		0105FEF921C24AF40080EEE4 /* GenericScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FEF721C24AF40080EEE4 /* GenericScreenViewController.swift */; };
+		0105FEFA21C24AF40080EEE4 /* GenericScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0105FEF821C24AF40080EEE4 /* GenericScreenViewController.xib */; };
+		0105FEFC21C24B2C0080EEE4 /* GenericScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FEFB21C24B2C0080EEE4 /* GenericScreenPresenter.swift */; };
+		0105FF0521C252410080EEE4 /* JSONBuildeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF0421C252410080EEE4 /* JSONBuildeable.swift */; };
+		0105FF1121C26FC60080EEE4 /* CardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF0E21C26FC60080EEE4 /* CardTemplate.swift */; };
+		0105FF1221C26FC60080EEE4 /* TemplateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF0F21C26FC60080EEE4 /* TemplateFactory.swift */; };
+		0105FF1321C26FC60080EEE4 /* BaseTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1021C26FC60080EEE4 /* BaseTemplate.swift */; };
+		0105FF1521C26FD30080EEE4 /* BaseAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1421C26FD20080EEE4 /* BaseAction.swift */; };
+		0105FF1721C270930080EEE4 /* NavegationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1621C270930080EEE4 /* NavegationAction.swift */; };
+		0105FF1921C2716C0080EEE4 /* ActionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1821C2716C0080EEE4 /* ActionFactory.swift */; };
+		0105FF1F21C298240080EEE4 /* BaseTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF1E21C298240080EEE4 /* BaseTemplateView.swift */; };
+		0105FF2121C299160080EEE4 /* CardTemplateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0105FF2021C299160080EEE4 /* CardTemplateView.xib */; };
+		0105FF2321C299240080EEE4 /* CardTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF2221C299240080EEE4 /* CardTemplateView.swift */; };
+		0105FF2521C2A1440080EEE4 /* TemplateViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF2421C2A1440080EEE4 /* TemplateViewFactory.swift */; };
+		0105FF2821C2ACF40080EEE4 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF2721C2ACF40080EEE4 /* Navigator.swift */; };
+		0105FF2A21C2AD160080EEE4 /* GenericSceneBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105FF2921C2AD160080EEE4 /* GenericSceneBuilder.swift */; };
+		80C68249FFD36CB3661BEFD3 /* Pods_iOSTalk13122018Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63DAB51116C6A9CE8A1DCD4 /* Pods_iOSTalk13122018Tests.framework */; };
+		D9F4AAE4423FC49AFDA64C82 /* Pods_iOSTalk13122018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5A9CA36D972DA7DFDEF16F9 /* Pods_iOSTalk13122018.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +54,28 @@
 		0105FEDC21BF59DC0080EEE4 /* iOSTalk13122018Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTalk13122018Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0105FEE021BF59DC0080EEE4 /* iOSTalk13122018Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTalk13122018Tests.swift; sourceTree = "<group>"; };
 		0105FEE221BF59DC0080EEE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0105FEF721C24AF40080EEE4 /* GenericScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericScreenViewController.swift; sourceTree = "<group>"; };
+		0105FEF821C24AF40080EEE4 /* GenericScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericScreenViewController.xib; sourceTree = "<group>"; };
+		0105FEFB21C24B2C0080EEE4 /* GenericScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericScreenPresenter.swift; sourceTree = "<group>"; };
+		0105FF0421C252410080EEE4 /* JSONBuildeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBuildeable.swift; sourceTree = "<group>"; };
+		0105FF0E21C26FC60080EEE4 /* CardTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTemplate.swift; sourceTree = "<group>"; };
+		0105FF0F21C26FC60080EEE4 /* TemplateFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateFactory.swift; sourceTree = "<group>"; };
+		0105FF1021C26FC60080EEE4 /* BaseTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTemplate.swift; sourceTree = "<group>"; };
+		0105FF1421C26FD20080EEE4 /* BaseAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAction.swift; sourceTree = "<group>"; };
+		0105FF1621C270930080EEE4 /* NavegationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavegationAction.swift; sourceTree = "<group>"; };
+		0105FF1821C2716C0080EEE4 /* ActionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionFactory.swift; sourceTree = "<group>"; };
+		0105FF1E21C298240080EEE4 /* BaseTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTemplateView.swift; sourceTree = "<group>"; };
+		0105FF2021C299160080EEE4 /* CardTemplateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTemplateView.xib; sourceTree = "<group>"; };
+		0105FF2221C299240080EEE4 /* CardTemplateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTemplateView.swift; sourceTree = "<group>"; };
+		0105FF2421C2A1440080EEE4 /* TemplateViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewFactory.swift; sourceTree = "<group>"; };
+		0105FF2721C2ACF40080EEE4 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		0105FF2921C2AD160080EEE4 /* GenericSceneBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericSceneBuilder.swift; sourceTree = "<group>"; };
+		0B6586E58E1A24CBC08F833B /* Pods-iOSTalk13122018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTalk13122018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTalk13122018/Pods-iOSTalk13122018.debug.xcconfig"; sourceTree = "<group>"; };
+		572FAE759757B82B3ECE89C6 /* Pods-iOSTalk13122018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTalk13122018.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTalk13122018/Pods-iOSTalk13122018.release.xcconfig"; sourceTree = "<group>"; };
+		AA955C13EC319A5BF548BFC7 /* Pods-iOSTalk13122018Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTalk13122018Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTalk13122018Tests/Pods-iOSTalk13122018Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C5A9CA36D972DA7DFDEF16F9 /* Pods_iOSTalk13122018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTalk13122018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D63DAB51116C6A9CE8A1DCD4 /* Pods_iOSTalk13122018Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTalk13122018Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F49CFCC73072304401CC8AE2 /* Pods-iOSTalk13122018Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTalk13122018Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTalk13122018Tests/Pods-iOSTalk13122018Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F4AAE4423FC49AFDA64C82 /* Pods_iOSTalk13122018.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C68249FFD36CB3661BEFD3 /* Pods_iOSTalk13122018Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +104,8 @@
 				0105FECA21BF59DB0080EEE4 /* iOSTalk13122018 */,
 				0105FEDF21BF59DC0080EEE4 /* iOSTalk13122018Tests */,
 				0105FEC921BF59DB0080EEE4 /* Products */,
+				FD5528A904E60E25963F4D52 /* Pods */,
+				5D5B2BD927ED98F6817BE81E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +121,11 @@
 		0105FECA21BF59DB0080EEE4 /* iOSTalk13122018 */ = {
 			isa = PBXGroup;
 			children = (
+				0105FF2621C2ACF40080EEE4 /* Utils */,
+				0105FF1D21C298030080EEE4 /* TemplateViews */,
+				0105FF0321C252160080EEE4 /* Protocols */,
+				0105FEFE21C24F360080EEE4 /* Model */,
+				0105FEF621C24A870080EEE4 /* GenericScene */,
 				0105FECB21BF59DB0080EEE4 /* AppDelegate.swift */,
 				0105FECD21BF59DB0080EEE4 /* ViewController.swift */,
 				0105FECF21BF59DB0080EEE4 /* Main.storyboard */,
@@ -96,6 +145,94 @@
 			path = iOSTalk13122018Tests;
 			sourceTree = "<group>";
 		};
+		0105FEF621C24A870080EEE4 /* GenericScene */ = {
+			isa = PBXGroup;
+			children = (
+				0105FEF721C24AF40080EEE4 /* GenericScreenViewController.swift */,
+				0105FEF821C24AF40080EEE4 /* GenericScreenViewController.xib */,
+				0105FEFB21C24B2C0080EEE4 /* GenericScreenPresenter.swift */,
+			);
+			path = GenericScene;
+			sourceTree = "<group>";
+		};
+		0105FEFE21C24F360080EEE4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0105FF0D21C26FC60080EEE4 /* Template */,
+				0105FF0C21C26F6D0080EEE4 /* Action */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0105FF0321C252160080EEE4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0105FF0421C252410080EEE4 /* JSONBuildeable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0105FF0C21C26F6D0080EEE4 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				0105FF1421C26FD20080EEE4 /* BaseAction.swift */,
+				0105FF1621C270930080EEE4 /* NavegationAction.swift */,
+				0105FF1821C2716C0080EEE4 /* ActionFactory.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		0105FF0D21C26FC60080EEE4 /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				0105FF0E21C26FC60080EEE4 /* CardTemplate.swift */,
+				0105FF0F21C26FC60080EEE4 /* TemplateFactory.swift */,
+				0105FF1021C26FC60080EEE4 /* BaseTemplate.swift */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		0105FF1D21C298030080EEE4 /* TemplateViews */ = {
+			isa = PBXGroup;
+			children = (
+				0105FF1E21C298240080EEE4 /* BaseTemplateView.swift */,
+				0105FF2021C299160080EEE4 /* CardTemplateView.xib */,
+				0105FF2221C299240080EEE4 /* CardTemplateView.swift */,
+				0105FF2421C2A1440080EEE4 /* TemplateViewFactory.swift */,
+			);
+			name = TemplateViews;
+			path = Model/TemplateViews;
+			sourceTree = "<group>";
+		};
+		0105FF2621C2ACF40080EEE4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0105FF2721C2ACF40080EEE4 /* Navigator.swift */,
+				0105FF2921C2AD160080EEE4 /* GenericSceneBuilder.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5D5B2BD927ED98F6817BE81E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5A9CA36D972DA7DFDEF16F9 /* Pods_iOSTalk13122018.framework */,
+				D63DAB51116C6A9CE8A1DCD4 /* Pods_iOSTalk13122018Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD5528A904E60E25963F4D52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B6586E58E1A24CBC08F833B /* Pods-iOSTalk13122018.debug.xcconfig */,
+				572FAE759757B82B3ECE89C6 /* Pods-iOSTalk13122018.release.xcconfig */,
+				F49CFCC73072304401CC8AE2 /* Pods-iOSTalk13122018Tests.debug.xcconfig */,
+				AA955C13EC319A5BF548BFC7 /* Pods-iOSTalk13122018Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0105FEE521BF59DC0080EEE4 /* Build configuration list for PBXNativeTarget "iOSTalk13122018" */;
 			buildPhases = (
+				3973589CC77B174C639566B3 /* [CP] Check Pods Manifest.lock */,
 				0105FEC421BF59DB0080EEE4 /* Sources */,
 				0105FEC521BF59DB0080EEE4 /* Frameworks */,
 				0105FEC621BF59DB0080EEE4 /* Resources */,
+				D30DB2375422C89EBD087398 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0105FEE821BF59DC0080EEE4 /* Build configuration list for PBXNativeTarget "iOSTalk13122018Tests" */;
 			buildPhases = (
+				A5E3AA2768FC484202F46A4D /* [CP] Check Pods Manifest.lock */,
 				0105FED821BF59DC0080EEE4 /* Sources */,
 				0105FED921BF59DC0080EEE4 /* Frameworks */,
 				0105FEDA21BF59DC0080EEE4 /* Resources */,
@@ -177,6 +317,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0105FEFA21C24AF40080EEE4 /* GenericScreenViewController.xib in Resources */,
+				0105FF2121C299160080EEE4 /* CardTemplateView.xib in Resources */,
 				0105FED621BF59DB0080EEE4 /* LaunchScreen.storyboard in Resources */,
 				0105FED321BF59DB0080EEE4 /* Assets.xcassets in Resources */,
 				0105FED121BF59DB0080EEE4 /* Main.storyboard in Resources */,
@@ -192,13 +334,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3973589CC77B174C639566B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSTalk13122018-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5E3AA2768FC484202F46A4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSTalk13122018Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D30DB2375422C89EBD087398 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iOSTalk13122018/Pods-iOSTalk13122018-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSTalk13122018/Pods-iOSTalk13122018-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0105FEC421BF59DB0080EEE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0105FF2321C299240080EEE4 /* CardTemplateView.swift in Sources */,
+				0105FEFC21C24B2C0080EEE4 /* GenericScreenPresenter.swift in Sources */,
+				0105FF1721C270930080EEE4 /* NavegationAction.swift in Sources */,
 				0105FECE21BF59DB0080EEE4 /* ViewController.swift in Sources */,
+				0105FEF921C24AF40080EEE4 /* GenericScreenViewController.swift in Sources */,
+				0105FF1921C2716C0080EEE4 /* ActionFactory.swift in Sources */,
+				0105FF2A21C2AD160080EEE4 /* GenericSceneBuilder.swift in Sources */,
+				0105FF1F21C298240080EEE4 /* BaseTemplateView.swift in Sources */,
+				0105FF1121C26FC60080EEE4 /* CardTemplate.swift in Sources */,
+				0105FF1521C26FD30080EEE4 /* BaseAction.swift in Sources */,
+				0105FF1321C26FC60080EEE4 /* BaseTemplate.swift in Sources */,
+				0105FF2521C2A1440080EEE4 /* TemplateViewFactory.swift in Sources */,
+				0105FF2821C2ACF40080EEE4 /* Navigator.swift in Sources */,
+				0105FF0521C252410080EEE4 /* JSONBuildeable.swift in Sources */,
 				0105FECC21BF59DB0080EEE4 /* AppDelegate.swift in Sources */,
+				0105FF1221C26FC60080EEE4 /* TemplateFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +569,7 @@
 		};
 		0105FEE621BF59DC0080EEE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B6586E58E1A24CBC08F833B /* Pods-iOSTalk13122018.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +588,7 @@
 		};
 		0105FEE721BF59DC0080EEE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 572FAE759757B82B3ECE89C6 /* Pods-iOSTalk13122018.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +607,7 @@
 		};
 		0105FEE921BF59DC0080EEE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F49CFCC73072304401CC8AE2 /* Pods-iOSTalk13122018Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +629,7 @@
 		};
 		0105FEEA21BF59DC0080EEE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA955C13EC319A5BF548BFC7 /* Pods-iOSTalk13122018Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

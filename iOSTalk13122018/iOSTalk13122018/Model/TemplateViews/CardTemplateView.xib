@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardTemplateView" customModule="iOSTalk13122018" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhM-uY-gQj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b7t-2i-8CI">
+                    <rect key="frame" x="15" y="31" width="345" height="142.5"/>
+                    <string key="text">was a South African anti-apartheid revolutionary, political leader, and philanthropist who served as President of South Africa from 1994 to 1999. He was the country's first black head of state and the first elected in a fully representative democratic election. His government</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b7t-2i-8CI" firstAttribute="top" secondItem="QhM-uY-gQj" secondAttribute="bottom" constant="10" id="0HY-1U-a0f"/>
+                <constraint firstItem="QhM-uY-gQj" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="3iM-lf-jOE"/>
+                <constraint firstItem="QhM-uY-gQj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CdZ-SP-GC8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b7t-2i-8CI" secondAttribute="trailing" constant="15" id="pDw-Ti-XMJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QhM-uY-gQj" secondAttribute="trailing" id="tP3-j6-RAb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="b7t-2i-8CI" secondAttribute="bottom" constant="20.5" id="xXl-hN-5Re"/>
+                <constraint firstItem="b7t-2i-8CI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="zWj-2V-U1x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="subtitleLabel" destination="b7t-2i-8CI" id="vpF-ta-tGx"/>
+                <outlet property="titleLabel" destination="QhM-uY-gQj" id="QEn-l4-y0f"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-176"/>
+        </view>
+    </objects>
+</document>
