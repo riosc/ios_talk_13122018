@@ -19,10 +19,17 @@ class GenericSceneBuilder {
         view.presenter = presenter
         
         
-        let string = "{\"views\":[{\"id\":\"card\",\"title\":\"title\",\"subtitle\":\"was a South African anti-apartheid revolutionary, political leader, and philanthropist who served as President of South Africa from 1994 to 1999. He was the country's first black head of state and the first elected in a fully representative democratic election. His government\"}]}"
-        let model = BaseRootTemplate(json: JSON(parseJSON: string))
         
-        presenter.model = model
+        if let path = Bundle.main.path(forResource: "views", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let model = BaseRootTemplate(json: JSON(data))
+                presenter.model = model
+
+            } catch {
+                // handle error
+            }
+        }
         
         return view
     }
