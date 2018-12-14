@@ -15,8 +15,8 @@ class CardTemplateView: BaseTemplateView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var actionButton: UIButton!
+    @IBOutlet weak var actionButtonHeight: NSLayoutConstraint!
 
-    
     override func updateUI() {
         super.updateUI()
         if let card = self.data as? CardTemplate {
@@ -24,6 +24,9 @@ class CardTemplateView: BaseTemplateView {
             self.subtitleLabel.text = card.subtitle
             self.actionButton.setTitle(card.action?.label, for: UIControlState.normal)
         }
+        
+        self.actionButtonHeight.constant = self.data?.action?.label == nil ? 0 : 50
+
         
     }
     

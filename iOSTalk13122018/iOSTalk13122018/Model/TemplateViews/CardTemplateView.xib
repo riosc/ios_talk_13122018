@@ -58,6 +58,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="actionButton" destination="OBd-ZP-KG1" id="Tq0-Og-2C4"/>
+                <outlet property="actionButtonHeight" destination="ss5-tl-KAk" id="sNo-Eb-Kmt"/>
                 <outlet property="subtitleLabel" destination="b7t-2i-8CI" id="vpF-ta-tGx"/>
                 <outlet property="titleLabel" destination="QhM-uY-gQj" id="QEn-l4-y0f"/>
             </connections>
