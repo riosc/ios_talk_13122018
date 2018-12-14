@@ -15,7 +15,7 @@ protocol TemplateView:class {
     var handler: ActionHandler? { get set }
     
     func updateUI()
-    func visit(_ builder: ActionHandlerBuilder)
+    func accept(_ builder: ActionHandlerBuilder)
 
     static func view(withData:Template) -> TemplateView
     
@@ -37,7 +37,7 @@ class BaseTemplateView: UIView, TemplateView {
         return view
     }
 
-    func visit(_ builder: ActionHandlerBuilder) {
+    func accept(_ builder: ActionHandlerBuilder) {
         builder.injectAction(inView: self)
     }
 
